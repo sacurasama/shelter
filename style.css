@@ -1,0 +1,479 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 10px */
+  font-size: 62.5%;
+  -webkit-text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+img {
+  display: inline-block;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #545454;
+}
+
+.container {
+  width: 128rem;
+  margin: 0 auto;
+}
+
+.button-primary {
+  font-size: 1.7rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #292929;
+  padding: 1.5rem 4.5rem;
+  min-width: 0;
+  border-radius: 100px;
+  background-color: #f1cdb3;
+  border: none;
+  letter-spacing: 0.1rem;
+}
+
+.button-primary:hover,
+.button-primary:visited {
+  background-color: #fddcc4;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button-secondary {
+  font-size: 1.7rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #292929;
+  padding: 1.5rem 4.5rem;
+  display: inline-flex;
+  border-radius: 100px;
+  border: solid #f1cdb3 2px;
+  background-color: #fafafa;
+  transition: 0.5ms;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4.55rem;
+  color: #545454;
+  text-align: left;
+  letter-spacing: 0.2rem;
+}
+
+.h3-center {
+  text-align: center !important;
+}
+
+.h3-footer {
+  color: white;
+  text-align: left;
+}
+
+.subheading-dark {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #4c4c4c;
+  text-align: left;
+  text-wrap: pretty;
+}
+
+ul {
+  list-style: none;
+}
+
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: left;
+  letter-spacing: 0.11rem;
+}
+
+.h4-footer {
+  color: #f1cdb3;
+  align-items: flex-start;
+}
+
+/* Start Screen */
+
+.start-screen-puppy {
+  width: 698px;
+  height: 728px;
+}
+
+.hero-main {
+  background-image: url(img/start-screen-background.png);
+  background-size: cover;
+  padding-top: 3rem;
+  background-position: center;
+}
+
+.header-main {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #f1cdb3;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+/* ******************* */
+/* Navigation */
+/* ******************* */
+
+.navigation-main {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  list-style: none;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-link-main:link,
+.menu-link-main:visited {
+  text-decoration: none;
+  color: #cdcdcd;
+}
+
+.menu-link-main:hover,
+.menu-link-main:active {
+  color: #fafafa;
+  text-decoration: solid underline #f1cdb3 3px;
+  transition: 0.5s;
+}
+
+.always-active-main:link,
+.always-active-main:visited {
+  color: #fafafa;
+  text-decoration: solid underline #f1cdb3 3px;
+}
+
+/* ******************* */
+/*Not Only*/
+/* ******************* */
+.not-only {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.2rem;
+  padding: 0 4rem;
+  margin-top: 9rem;
+}
+
+.start-screen-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.2rem;
+  padding-top: 16.3rem;
+}
+
+h2 {
+  font-size: 4.4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: white;
+  line-height: 5.72rem;
+}
+
+.subheading-light {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #cdcdcd;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+/* ******************* */
+/*About*/
+/* ******************* */
+
+.section-about {
+  display: grid;
+  grid-template-columns: 30rem 43rem;
+  gap: 12rem;
+  margin: 8rem 17.5rem 10rem 17.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-about-box {
+  display: flex;
+  justify-content: center;
+}
+.img-about {
+  width: 30rem;
+}
+
+.text-about {
+  display: grid;
+  gap: 2.5rem;
+}
+
+/* ******************* */
+/*Our Friends*/
+/* ******************* */
+
+.our-friends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  gap: 6rem;
+  padding: 8rem 0 10rem 0;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  width: 27rem;
+  height: 43.5rem;
+  gap: 3rem;
+  margin: auto 45px;
+  border-radius: 9px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card:hover,
+.card:active {
+  cursor: pointer;
+  box-shadow: 0px 2px 35px 14px rgb(13, 13, 13, 6%);
+}
+
+p {
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.27rem;
+  text-align: center;
+}
+
+.button-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 100px;
+  border: solid #f1cdb3 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button-slider:active,
+.button-slider:hover {
+  background-color: #fddcc4;
+  border: none;
+}
+
+.card:hover .button-secondary,
+.card:active .button-secondary {
+  background-color: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+
+.icon-arrow {
+  align-self: center;
+}
+
+/* ******************* */
+/*How you can help*/
+/* ******************* */
+.section-help {
+  /* width: 102.6rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0 10rem 0;
+}
+
+.help-icons {
+  display: grid;
+  gap: 5.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.icons-row {
+  display: flex;
+  width: 120rem;
+  gap: 5.5rem 12rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 6rem auto 0 auto;
+}
+
+/* ******************* */
+/*Donation*/
+/* ******************* */
+
+.section-in-addition {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  padding: 8rem 0 10rem 0;
+}
+
+.img-donation-box {
+  display: flex;
+  justify-content: end;
+}
+.img-donation {
+  width: 50.5rem;
+}
+
+.h3-donation {
+  text-align: left;
+}
+
+.donation-info {
+  display: flex;
+  flex-direction: column;
+  width: 38rem;
+  gap: 2rem;
+}
+
+.credit-card {
+  display: flex;
+  align-items: center;
+  background-color: #f1cdb3;
+  width: 34.9rem;
+  height: 4.3rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 9px;
+  gap: 1rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #545454;
+  line-height: 2rem;
+  text-align: left;
+  letter-spacing: 0.09rem;
+}
+
+.text-italic {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: #b2b2b2;
+}
+
+/* ******************* */
+/*Footer*/
+/* ******************* */
+
+.footer {
+  background-image: url(img/start-screen-background.png);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  /* justify-content: center; */
+  align-content: center;
+  padding: 4rem 4rem 0 4rem;
+  gap: 15rem;
+}
+
+.img-footer {
+  width: 29rem;
+  height: 31rem;
+}
+
+.contacts,
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1.6rem;
+}
+
+.contacts {
+  gap: 4rem;
+}
+
+.location {
+  gap: 3.3rem;
+}
+
+.email,
+.phone,
+.street,
+.city {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+a.email,
+a.telephone,
+a.geo {
+  color: #f1cdb3;
+}
+/* descending selector
+.email img{
+  filter: grayscale(100%);
+} */
