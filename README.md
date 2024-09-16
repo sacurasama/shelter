@@ -1,21 +1,19 @@
 **Description**
 
-This cute website was created at Rsschool FrontEnd PreSchool Course.
-
+This cute Shelter website was created at RsSchool FrontEnd Pre-School Course.
+***
 **Stack**
 
-HTML
-
-CSS: flexbox, grid, animations.
+- HTML
+- CSS: flexbox, grid.
 
 **Plans**
 
-add mobile versions
-
-add  burger menu
-
-add slider
+- add mobile versions
+- add a burger menu
+- add a slider
 
 **To watch**
+
 
 https://sacurasama.github.io/shelter/
