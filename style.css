@@ -118,7 +118,9 @@ h4 {
   align-items: flex-start;
 }
 
+/* ******************* */
 /* Start Screen */
+/* ******************* */
 
 .start-screen-puppy {
   width: 698px;
@@ -266,11 +268,14 @@ h2 {
 
 .slider {
   display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr auto;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   justify-content: center;
 }
-
+.slider-cards {
+  display: flex;
+  flex-direction: row;
+}
 .card {
   display: flex;
   flex-direction: column;
