@@ -67,7 +67,7 @@
 }
 
 .cards-conteiner {
-  width: 120rem;
+  /* width: 120rem; */
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(4, 27rem);
