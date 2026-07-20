@@ -119,6 +119,16 @@
   */
 
   /* ******************* */
+  /*BURGER*/
+  /* ******************* */
+.navigation-main{
+  display: none;
+}
+
+.menu-burger {
+  opacity: 1;
+}
+  /* ******************* */
   /*Donation*/
   /* ******************* */
   .section-in-addition {

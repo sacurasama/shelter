@@ -2,14 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="queries.css" />
     <title>Shelter</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="mobile_menu.css" />
+    <link rel="stylesheet" type="text/css" href="queries.css" />
+    <script defer src="/burger-menu.js"></script>
   </head>
   <body>
+       
     <!-- <div class="conteiner"> -->
     <div class="hero-main">
       <header class="header-main">
@@ -33,6 +36,7 @@
           </ul>
         </nav>
       </header>
+     
       <section class="not-only container">
         <div class="start-screen-text">
           <h2>
@@ -265,10 +269,26 @@
           </h4>
         </div>
       </div>
-
       <div class="img-footer">
         <img src="img/footer-puppy.png" alt="puppy" class="img-footer" />
       </div>
     </footer>
+    <aside>
+      <div class="dark-body"></div>
+      <div class="mobile-menu">
+         <a href="#" class="menu-link-burger always-active-main">About the Shelter</a>
+            </li>
+            <li><a href="pets.html" class="menu-link-burger">Our Pets</a></li>
+            <li>
+              <a href="#Help" class="menu-link-burger">Help the shelter</a>
+            </li>
+            <li><a href="#Contacts" class="menu-link-burger">Contacts</a></li>
+      </div>
+      <div class="menu-burger">         
+              <span></span>
+              <span></span>
+              <span></span>
+            </div> 
+            </aside>
   </body>
 </html>

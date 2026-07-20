@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="pets-style.css" />
+    <link rel="stylesheet" type="text/css" href="mobile_menu.css" />
     <link rel="stylesheet" type="text/css" href="queries.css" />
+    <script defer src="/burger-menu.js"></script>
     <title>Shelter</title>
   </head>
   <body>
@@ -16,13 +18,13 @@
           <p class="subtitle-pets">Shelter for pets in Boston</p>
         </div>
         <nav>
-          <ul class="navigation">
+          <ul class="navigation-main">
             <li>
-              <a class="menu-link" href="index.html">About the Shelter</a>
+              <a class="menu-link-main" href="index.html">About the Shelter</a>
             </li>
             <li><a href="#" class="always-active">Our Pets</a></li>
-            <li><a href="#Help" class="menu-link">Help the shelter</a></li>
-            <li><a href="#Contacts" class="menu-link">Contacts</a></li>
+            <li><a href="index.html#Help" class="menu-link-main">Help the shelter</a></li>
+            <li><a href="#Contacts" class="menu-link-main">Contacts</a></li>
           </ul>
         </nav>
       </header>
@@ -167,5 +169,22 @@
         </div>
       </footer>
     </div>
+     <aside>
+      <div class="dark-body"></div>
+      <div class="mobile-menu">
+         <a href="#" class="menu-link-burger always-active-main">About the Shelter</a>
+            </li>
+            <li><a href="pets.html" class="menu-link-burger">Our Pets</a></li>
+            <li>
+              <a href="index.html#Help" class="menu-link-burger">Help the shelter</a>
+            </li>
+            <li><a href="#Contacts" class="menu-link-burger">Contacts</a></li>
+      </div>
+      <div class="menu-burger">         
+              <span></span>
+              <span></span>
+              <span></span>
+            </div> 
+            </aside>
   </body>
 </html>
