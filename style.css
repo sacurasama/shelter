@@ -25,7 +25,7 @@ aside{
   display: block;
 }
 
-li {
+.list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,16 +271,17 @@ h2 {
 /* ******************* */
 
 .our-friends {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f6f6f6;
-  gap: 6rem;
-  padding: 8rem 0 10rem 0;
+ padding: 80px 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      background-color: #f6f6f6;
+    gap: 60px;
 }
 
-.slider {
+
+
+/* .slider {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -308,7 +309,7 @@ h2 {
 .card:active {
   cursor: pointer;
   box-shadow: 0px 2px 35px 14px rgb(13, 13, 13, 6%);
-}
+} */
 
 p {
   font-family: Georgia;
@@ -318,7 +319,7 @@ p {
   text-align: center;
 }
 
-.button-slider {
+/* .button-slider {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,7 +345,7 @@ p {
 
 .icon-arrow {
   align-self: center;
-}
+} */
 
 /* ******************* */
 /*How you can help*/

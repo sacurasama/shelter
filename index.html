@@ -9,7 +9,10 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="mobile_menu.css" />
     <link rel="stylesheet" type="text/css" href="queries.css" />
+    <link rel="stylesheet" type="text/css" href="slider.css" />
+    <script defer src="/slider.js"></script>
     <script defer src="/burger-menu.js"></script>
+    
   </head>
   <body>
        
@@ -22,17 +25,17 @@
         </div>
         <nav>
           <ul class="navigation-main">
-            <li>
+            <li class="list-item">
               <a href="#" class="menu-link-main always-active-main"
                 >About the Shelter</a
               >
             </li>
 
-            <li><a href="pets.html" class="menu-link-main">Our Pets</a></li>
-            <li>
+            <li class="list-item"><a href="pets.html" class="menu-link-main">Our Pets</a></li>
+            <li class="list-item">
               <a href="#Help" class="menu-link-main">Help the shelter</a>
             </li>
-            <li><a href="#Contacts" class="menu-link-main">Contacts</a></li>
+            <li class="list-item"><a href="#Contacts" class="menu-link-main">Contacts</a></li>
           </ul>
         </nav>
       </header>
@@ -90,39 +93,60 @@
         are looking for a house
       </h3>
       <div class="slider">
-        <div class="button-slider">
+        <button class="button-slider" id="left-arrow">
           <img src="img/Arrow-left.svg" class="icon-arrow" alt="Arrow_left" />
-        </div>
+        </button>
         <div class="slider-cards">
-          <div class="card">
-            <img src="img/pets/pets-katrine.png" alt="puppy" />
-            <p>Katrine</p>
-            <button class="button-secondary">Learn more</button>
-          </div>
-          <div class="card">
-            <img src="img/pets/pets-jennifer.png" alt="puppy" />
-            <p>Jennifer</p>
-            <button class="button-secondary">Learn more</button>
-          </div>
-          <div class="card">
-            <img src="img/pets/pets-woody.png" alt="adult dog" />
-            <p>Woody</p>
-            <button class="button-secondary">Learn more</button>
-          </div>
-        </div>
-        <div class="button-slider">
-          <img src="img/Arrow-right.svg" class="icon-arrow" alt="Arrow_left" />
-        </div>
+          <div class="slider-container">
+                    <div class="slider__group slider__previous-slide"></div>
+                    <div class="slider__group slider__current-slide">
+                    </div>
+                    <div class="slider__group slider__next-slide"></div>
+                </div>
+            </div>
+        <button class="button-slider" id="right-arrow">
+          <img src="img/Arrow-right.svg" class="icon-arrow" alt="Arrow_right" />
+      </button>
       </div>
       <a href="/pets.html" class="button-primary">Get to know the rest</a>
     </section>
+    <div class="modal-overlay">
+        <div class="modal">
+            <img src="" alt="" class="modal-image">
+            <div class="modal__content">
+                <h3 class="modal__title"></h3>
+                <h4 class="modal__subtitle"></h4>
+                <p class="modal__description"></p>
+                <ul class="modal__list">
+                    <li class="modal__list-item">
+                        <span class="modal__list-label">Age:</span>
+                        <span class="modal__list-value"></span>
+                    </li>
+                    <li class="modal__list-item">
+                        <span class="modal__list-label">Inoculations:</span>
+                        <span class="modal__list-value"></span>
+                    </li>
+                    <li class="modal__list-item">
+                        <span class="modal__list-label">Diseases:</span>
+                        <span class="modal__list-value"></span>
+                    </li>
+                    <li class="modal__list-item">
+                        <span class="modal__list-label">Parasites:</span>
+                        <span class="modal__list-value"></span>
+                    </li>
+                </ul>
+            </div>
+            <button class="modal__close-button">&times;</button>
+        </div>
+    </div>
+</div>
     <section class="section-help" id="Help">
       <h3 class="h3-center">
         How you can help<br />
         our shelter
       </h3>
       <ul class="icons-row">
-        <li>
+        <li class="list-item">
           <img
             src="img/help_icons/icon-pet-food.svg"
             alt="pack of dog food icon"
@@ -130,7 +154,7 @@
           />
           <h4>Pet food</h4>
         </li>
-        <li>
+        <li class="list-item">
           <img
             src="img/help_icons/icon-transportation.svg"
             alt="ambulance icon"
@@ -138,7 +162,7 @@
           />
           <h4>Transportation</h4>
         </li>
-        <li>
+        <li class="list-item">
           <img
             src="img/help_icons/icon-toys.svg"
             alt="ball icon"
@@ -146,7 +170,7 @@
           />
           <h4>Toys</h4>
         </li>
-        <li>
+        <li class="list-item">
           <img
             src="img/help_icons/icon-bowls-and-cups.svg"
             alt="little ball icon"
@@ -154,7 +178,7 @@
           />
           <h4>Bowls and cups</h4>
         </li>
-        <li>
+        <li class="list-item">
           <img
             src="img/help_icons/icon-shampoos.svg"
             alt="shampoo bottle icon"
@@ -163,7 +187,7 @@
           <h4>Shampoos</h4>
         </li>
 
-        <li>
+        <li class="list-item">
           <img
             src="img/help_icons/icon-vitamins.svg"
             alt="vitamins icon"
@@ -171,7 +195,7 @@
           />
           <h4>Vitamins</h4>
         </li>
-        <li>
+        <li class="list-item">
           <img
             src="img/help_icons/icon-medicines.svg"
             alt="injection icon"
@@ -179,7 +203,7 @@
           />
           <h4>Medicines</h4>
         </li>
-        <li>
+        <li class="list-item">
           <img
             src="img/help_icons/icon-collars-leashes.svg"
             alt="collar icon"
@@ -187,7 +211,7 @@
           />
           <h4>Collars / leashes</h4>
         </li>
-        <li>
+        <li class="list-item">
           <img
             src="img/help_icons/icon-sleeping-area.svg"
             alt="dog douse icon"
