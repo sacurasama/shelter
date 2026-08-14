@@ -8,12 +8,11 @@ This cute Shelter website was created at RsSchool FrontEnd Pre-School Course.
 
 - HTML
 - CSS: flexbox, grid.
+- JS
 
 **Plans**
-
-- add mobile versions
-- add a burger menu
-- add a slider
+- add a burger menu on pets
+- add a pagination
 
 **To watch**
 
